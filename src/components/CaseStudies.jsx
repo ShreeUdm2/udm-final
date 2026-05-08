@@ -73,12 +73,12 @@ export default function CaseStudies() {
   return (
     <>
       <section className="w-full">
-        <div className="relative bg-black overflow-hidden flex flex-col sm:block">
+        <div className="relative bg-black overflow-visible sm:overflow-hidden flex flex-col sm:block">
           <img
             src={team}
             alt="Our Team"
             loading="lazy"
-            className="w-full h-[280px] sm:h-[350px] lg:h-[380px] object-cover object-top bg-black"
+            className="w-auto h-[280px] sm:w-full sm:h-[350px] lg:h-[380px] object-contain sm:object-cover object-top bg-black mx-auto sm:mx-0"
           />
           <div className="hidden sm:block absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
           <div className="sm:absolute sm:inset-0 flex flex-col justify-center items-start px-3 sm:px-6 lg:px-20 text-white max-w-3xl py-4 sm:py-0 sm:bg-gradient-to-r sm:from-black/90 sm:via-black/60 sm:to-transparent">
