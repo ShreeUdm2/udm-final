@@ -73,15 +73,15 @@ export default function CaseStudies() {
   return (
     <>
       <section className="w-full">
-        <div className="relative bg-black overflow-hidden">
+        <div className="relative bg-black overflow-hidden flex flex-col sm:block">
           <img
             src={team}
             alt="Our Team"
             loading="lazy"
-            className="w-full h-[400px] sm:h-[350px] lg:h-[380px] object-contain sm:object-cover object-top bg-black"
+            className="w-full h-[280px] sm:h-[350px] lg:h-[380px] object-cover object-top bg-black"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
-          <div className="absolute inset-0 flex flex-col justify-center items-start px-3 sm:px-6 lg:px-20 text-white max-w-3xl">
+          <div className="hidden sm:block absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent" />
+          <div className="sm:absolute sm:inset-0 flex flex-col justify-center items-start px-3 sm:px-6 lg:px-20 text-white max-w-3xl py-4 sm:py-0 sm:bg-gradient-to-r sm:from-black/90 sm:via-black/60 sm:to-transparent">
             <h2 className="text-xl sm:text-2xl lg:text-5xl font-black mb-3 sm:mb-6">OUR TEAM</h2>
             <h3 className="text-lg sm:text-2xl lg:text-4xl font-black mb-3 sm:mb-6 relative pl-3 sm:pl-6">
               <span className="absolute left-0 top-0 w-1 h-full bg-brand"></span>
