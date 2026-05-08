@@ -7,14 +7,14 @@ export default function Hero() {
   return (
     <>
       <section className="w-full min-h-[70vh] sm:min-h-[80vh] lg:min-h-[90vh] px-4 sm:px-6 py-6 lg:py-1 relative">
-        <div className="relative w-full flex flex-col md:flex-row items-center justify-center min-h-[320px] sm:min-h-[380px] lg:h-[480px]">
+        <div className="relative w-full flex flex-col md:flex-row items-center justify-center min-h-[280px] sm:min-h-[380px] lg:h-[480px]">
 
           <div className="max-w-xl hero-content w-full md:w-auto">
             <div className="inline-block border-2 border-black px-3 py-1 rounded-full font-bold mb-4 text-xs sm:text-sm -rotate-2 brutalist-shadow">
               We make brands go crazy online
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] font-bold tracking-tighter leading-[1] mb-4 uppercase">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-[4.5rem] font-bold tracking-tighter leading-[1] mb-4 uppercase">
               EXPLODE YOUR <br />
               <span
                 className="bg-clip-text"
@@ -33,23 +33,23 @@ export default function Hero() {
               websites and social media.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 font-bold">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 font-bold">
               <a
                 href="https://calendly.com/udmtechnosolution/30min?month=2026-04"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-brand text-sm sm:text-base px-5 sm:px-6 py-3 rounded-2xl brutalist-shadow border-2 border-black flex justify-center items-center gap-2 group hover:bg-zinc-900 transition-colors"
+                className="bg-black text-brand text-xs sm:text-sm md:text-base px-4 sm:px-6 py-2.5 sm:py-3 rounded-2xl brutalist-shadow border-2 border-black flex justify-center items-center gap-2 group hover:bg-zinc-900 transition-colors"
               >
                 Book a Call
                 <iconify-icon
                   icon="solar:arrow-right-up-linear"
-                  className="text-xl group-hover:rotate-45 transition-transform"
+                  className="text-lg sm:text-xl group-hover:rotate-45 transition-transform"
                 />
               </a>
 
               <button
                 onClick={() => setShowPDF(true)}
-                className="bg-white text-black text-sm sm:text-base px-5 sm:px-6 py-3 rounded-2xl brutalist-shadow border-2 border-black flex justify-center items-center gap-2 hover:bg-zinc-100 transition-colors"
+                className="bg-white text-black text-xs sm:text-sm md:text-base px-4 sm:px-6 py-2.5 sm:py-3 rounded-2xl brutalist-shadow border-2 border-black flex justify-center items-center gap-2 hover:bg-zinc-100 transition-colors"
               >
                 See Our Work
               </button>

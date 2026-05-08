@@ -44,39 +44,39 @@ export default function LeadForm({ defaultRequirement = "Website", compact = fal
   return (
     <form
       onSubmit={handleSubmit}
-      className={`bg-white border-2 border-black rounded-3xl brutalist-shadow p-6 md:p-8 space-y-4 ${
+      className={`bg-white border-2 border-black rounded-2xl sm:rounded-3xl brutalist-shadow p-4 sm:p-6 md:p-8 space-y-3 sm:space-y-4 ${
         compact ? "" : "max-w-2xl w-full"
       }`}
     >
       <div>
-        <label className="block text-sm font-black uppercase tracking-wider mb-1">Name</label>
+        <label className="block text-xs sm:text-sm font-black uppercase tracking-wider mb-1">Name</label>
         <input
           type="text"
           value={form.name}
           onChange={(e) => setForm({ ...form, name: e.target.value })}
-          className="w-full border-2 border-black rounded-xl px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-brand"
+          className="w-full border-2 border-black rounded-lg sm:rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-brand text-sm"
           placeholder="Your full name"
           required
         />
       </div>
       <div>
-        <label className="block text-sm font-black uppercase tracking-wider mb-1">Phone Number</label>
+        <label className="block text-xs sm:text-sm font-black uppercase tracking-wider mb-1">Phone Number</label>
         <input
           type="tel"
           value={form.phone}
           onChange={(e) => setForm({ ...form, phone: e.target.value })}
-          className="w-full border-2 border-black rounded-xl px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-brand"
+          className="w-full border-2 border-black rounded-lg sm:rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-brand text-sm"
           placeholder="+91 99999 99999"
           required
         />
       </div>
-      <div className="grid sm:grid-cols-2 gap-4">
+      <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
         <div>
-          <label className="block text-sm font-black uppercase tracking-wider mb-1">Requirement</label>
+          <label className="block text-xs sm:text-sm font-black uppercase tracking-wider mb-1">Requirement</label>
           <select
             value={form.requirement}
             onChange={(e) => setForm({ ...form, requirement: e.target.value })}
-            className="w-full border-2 border-black rounded-xl px-3 py-3 font-semibold bg-white"
+            className="w-full border-2 border-black rounded-lg sm:rounded-xl px-3 py-2.5 sm:py-3 font-semibold bg-white text-sm"
           >
             {REQUIREMENTS.map((r) => (
               <option key={r} value={r}>
@@ -86,11 +86,11 @@ export default function LeadForm({ defaultRequirement = "Website", compact = fal
           </select>
         </div>
         <div>
-          <label className="block text-sm font-black uppercase tracking-wider mb-1">Start</label>
+          <label className="block text-xs sm:text-sm font-black uppercase tracking-wider mb-1">Start</label>
           <select
             value={form.start_timeline}
             onChange={(e) => setForm({ ...form, start_timeline: e.target.value })}
-            className="w-full border-2 border-black rounded-xl px-3 py-3 font-semibold bg-white"
+            className="w-full border-2 border-black rounded-lg sm:rounded-xl px-3 py-2.5 sm:py-3 font-semibold bg-white text-sm"
           >
             {TIMELINES.map((t) => (
               <option key={t} value={t}>
@@ -101,19 +101,19 @@ export default function LeadForm({ defaultRequirement = "Website", compact = fal
         </div>
       </div>
       <div>
-        <label className="block text-sm font-black uppercase tracking-wider mb-1">Custom Message</label>
+        <label className="block text-xs sm:text-sm font-black uppercase tracking-wider mb-1">Custom Message</label>
         <textarea
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
           rows={3}
-          className="w-full border-2 border-black rounded-xl px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-brand"
+          className="w-full border-2 border-black rounded-lg sm:rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-brand text-sm"
           placeholder="Tell us about your goals..."
         />
       </div>
-      {error && <p className="text-red-600 font-bold text-sm">{error}</p>}
+      {error && <p className="text-red-600 font-bold text-xs sm:text-sm">{error}</p>}
       <button
         type="submit"
-        className="w-full bg-brand text-brand-foreground border-2 border-black rounded-xl px-6 py-4 text-lg font-black brutalist-shadow hover:-translate-y-0.5 transition-transform"
+        className="w-full bg-brand text-brand-foreground border-2 border-black rounded-lg sm:rounded-xl px-4 sm:px-6 py-3 sm:py-4 text-base sm:text-lg font-bold sm:font-black brutalist-shadow hover:-translate-y-0.5 transition-transform"
       >
         Send on WhatsApp
       </button>
