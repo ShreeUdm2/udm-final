@@ -56,7 +56,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative w-full h-[300px] sm:h-[380px] lg:h-[420px] items-center justify-center hidden md:flex hero-illustration">
+          <div className="relative w-full h-[200px] sm:h-[300px] md:h-[380px] lg:h-[420px] items-center justify-center flex hero-illustration">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="absolute w-[65%] h-[80%] bg-brand border-2 border-black rounded-[24px] rotate-6 brutalist-shadow translate-x-4 translate-y-4" />
               <div className="absolute w-[65%] h-[80%] bg-white border-2 border-black rounded-[24px] p-4 flex flex-col z-10 brutalist-shadow">
